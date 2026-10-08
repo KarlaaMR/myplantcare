@@ -1,5 +1,10 @@
+import {plantas} from "@/data/plantas";
+import Catalogo from "@/components/Catalogo";
 
-
-export default function Plantas() {
-  return <h1 className="p-6 text-2xl">Plantas (ROGER)</h1>;
+export default function wiki() {
+  return (
+    <div>
+      <Catalogo plantas={plantas} />
+    </div>
+  );
 }
