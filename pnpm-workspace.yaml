@@ -1,5 +1,5 @@
 allowBuilds:
-  unrs-resolver: true
+  unrs-resolver: set this to true or false
 minimumReleaseAgeExclude:
   - '@next/env@16.4.0'
   - '@next/eslint-plugin-next@16.4.0'

@@ -1,11 +1,5 @@
-import {plantas} from "../../data/plantas";
-import Catalogo from "../../components/Catalogo";
 
-export default function book() {
-  return (
-    <div>
-      <Catalogo plantas={plantas} />
-    </div>
-  )
-  
+
+export default function Plantas() {
+  return <h1 className="p-6 text-2xl">Plantas (ROGER)</h1>;
 }
