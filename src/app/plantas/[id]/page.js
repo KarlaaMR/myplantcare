@@ -56,7 +56,7 @@ export default async function DetallePlanta ({params}) {
                 <div className="md:col-span-1 md:row-span-2 m-0 md:m-4 text-green-900">
                     <span className="text-2xl text-green-900 font-bold">Descripción</span>
                     <div className="mt-2 text-justify border-2 border-green-900 p-2 ">                    
-                        <p>that's the reason because i prefer insted of It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <p>{plantaEncontrada.descripcion}</p>
                     </div>
                 </div>
                 

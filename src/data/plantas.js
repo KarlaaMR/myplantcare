@@ -10,6 +10,9 @@ export const plantas = [
     riegoDias: 7,
     sustrato: "Substrato universal con buen drenaje",
     dificultad: "Fácil",
+    descripcion: "Enredadera muy resistente y adaptable, ideal para principiantes y espacios de interior.",
+    mesesSiembra: ["Marzo", "Abril", "Mayo"],
+    semanasSiembra: ["Semana 1", "Semana 2", "Semana 3", "Semana 4"]
   },
   {
     id: 2,
@@ -22,6 +25,9 @@ export const plantas = [
     riegoDias: 15,
     sustrato: "Arenoso, muy drenante",
     dificultad: "Fácil",
+    descripcion: "Planta purificadora casi indestructible que tolera descuidos y poca iluminación.",
+    mesesSiembra: ["Marzo", "Abril", "Mayo", "Junio"],
+    semanasSiembra: ["Semana 1", "Semana 2", "Semana 3", "Semana 4"]
   },
   {
     id: 3,
@@ -34,6 +40,9 @@ export const plantas = [
     riegoDias: 7,
     sustrato: "Rico en materia orgánica y bien aireado",
     dificultad: "Fácil",
+    descripcion: "Famosa por sus grandes hojas perforadas; aporta un estilo tropical a cualquier habitación.",
+    mesesSiembra: ["Marzo", "Abril", "Mayo"],
+    semanasSiembra: ["Semana 2", "Semana 3", "Semana 4"]
   },
   {
     id: 4,
@@ -46,6 +55,9 @@ export const plantas = [
     riegoDias: 14,
     sustrato: "Mezcla para cactáceas y suculentas",
     dificultad: "Fácil",
+    descripcion: "Suculenta con propiedades curativas en sus hojas, perfecta para ventanas muy soleadas.",
+    mesesSiembra: ["Abril", "Mayo", "Junio", "Julio"],
+    semanasSiembra: ["Semana 1", "Semana 2", "Semana 3", "Semana 4"]
   },
   {
     id: 5,
@@ -58,6 +70,9 @@ export const plantas = [
     riegoDias: 20,
     sustrato: "Específico para cactus con gravilla/perlita",
     dificultad: "Fácil",
+    descripcion: "Especie desértica de muy bajo mantenimiento que requiere riegos muy espaciados.",
+    mesesSiembra: ["Abril", "Mayo", "Junio", "Julio"],
+    semanasSiembra: ["Semana 1", "Semana 2", "Semana 3", "Semana 4"]
   },
   {
     id: 6,
@@ -70,6 +85,9 @@ export const plantas = [
     riegoDias: 12,
     sustrato: "Drenante con perlita y arena de río",
     dificultad: "Fácil",
+    descripcion: "Forma atractivas rosetas carnosas; excelente para macetas pequeñas y terrarios.",
+    mesesSiembra: ["Marzo", "Abril", "Septiembre", "Octubre"],
+    semanasSiembra: ["Semana 1", "Semana 2", "Semana 3", "Semana 4"]
   },
   {
     id: 7,
@@ -82,6 +100,9 @@ export const plantas = [
     riegoDias: 3,
     sustrato: "Ligero, rico en turba y retentor de humedad",
     dificultad: "Intermedio",
+    descripcion: "Planta de follaje frondoso y elegante que adora los ambientes húmedos y sombreados.",
+    mesesSiembra: ["Febrero", "Marzo", "Abril"],
+    semanasSiembra: ["Semana 1", "Semana 2", "Semana 3"]
   },
   {
     id: 8,
@@ -94,6 +115,9 @@ export const plantas = [
     riegoDias: 5,
     sustrato: "Universal, permeable y suelto",
     dificultad: "Fácil",
+    descripcion: "Crecimiento rápido y colgante, produce pequeños hijuelos que son muy fáciles de propagar.",
+    mesesSiembra: ["Marzo", "Abril", "Mayo", "Septiembre"],
+    semanasSiembra: ["Semana 1", "Semana 2", "Semana 3", "Semana 4"]
   },
   {
     id: 9,
@@ -106,6 +130,9 @@ export const plantas = [
     riegoDias: 6,
     sustrato: "Mezcla universal con tierra de hoja",
     dificultad: "Fácil",
+    descripcion: "Aporta un toque elegante y vertical al hogar, excelente para rincones con luz filtrada.",
+    mesesSiembra: ["Abril", "Mayo", "Junio"],
+    semanasSiembra: ["Semana 2", "Semana 3", "Semana 4"]
   },
   {
     id: 10,
@@ -118,5 +145,8 @@ export const plantas = [
     riegoDias: 4,
     sustrato: "Rico en humus, húmedo pero no encharcado",
     dificultad: "Avanzado",
-  },
+    descripcion: "Destaca por los vistosos y coloridos patrones de sus hojas; requiere humedad ambiental alta.",
+    mesesSiembra: ["Marzo", "Abril", "Mayo"],
+    semanasSiembra: ["Semana 1", "Semana 2", "Semana 3"]
+  }
 ];

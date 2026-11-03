@@ -1,5 +1,10 @@
-
+import CalendarioSiembra from "../../components/CalendarioSiembra";
+import { plantas } from "../../data/plantas";
 
 export default function Calendario() {
-  return <h1 className="p-6 text-2xl">Calendario (VALENTINA)</h1>;
+  return (
+    <div className="p-6">
+      <CalendarioSiembra plantas={plantas} />
+    </div>
+  );
 }
