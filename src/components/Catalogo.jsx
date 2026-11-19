@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PlantCard from "./PlantCard";
 import SearchBar from "./SearchBar";
+import { supabase } from "@/lib/supabase";
 
 const filtros = ["Todas", "Baja luz", "Riego escaso", "Pet-friendly"];
 
@@ -18,7 +19,7 @@ export default function Catalogo({ plantas }) {
     .filter((p) => {
       if (filtro === "Baja luz") return p.luz === "baja";
       if (filtro === "Riego escaso") return p.riego === "bajo";
-      if (filtro === "Pet-friendly") return p.petFriendly;
+      if (filtro === "Pet-friendly") return p.pet_friendly;
       return true;
     });
 

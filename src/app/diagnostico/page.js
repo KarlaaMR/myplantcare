@@ -48,7 +48,7 @@ export default function Diagnostico() {
   ];
 
   const obtenerDiagnostico = (sintomas) => {
-    const keys = sintomas.sort().join(",");
+    const keys = [...sintomas].sort().join(",");
 
     const diagnosticos = {
       "hojas-amarillas": {

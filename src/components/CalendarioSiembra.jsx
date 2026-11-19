@@ -8,13 +8,13 @@ const meses = [
 ];
 const semanas = ["Semana 1", "Semana 2", "Semana 3", "Semana 4"];
 
-export default function CalendarioSiembra({ plantas }) {
+export default function CalendarioSiembra({ plantas= []}) {
     const [mesActual, setMesActual] = useState("Enero");
     const [semanaActual, setSemanaActual] = useState("Semana 1");
 
     const plantasFiltradas = plantas.filter((p) => {
-    const coincideMes = p.mesesSiembra?.includes(mesActual);
-    const coincideSemana = p.semanasSiembra?.includes(semanaActual);
+    const coincideMes = p.meses_siembra?.includes(mesActual);
+    const coincideSemana = p.semanas_siembra?.includes(semanaActual);
     return coincideMes && coincideSemana;
     });
 

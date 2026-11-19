@@ -17,7 +17,7 @@ export default function PlantCard({ planta }) {
         {/* Encabezado y badges */}
         <div className="flex items-start justify-between gap-2 mb-2">
           <h3 className="text-lg font-bold text-gray-800">{planta.nombre}</h3>
-          {planta.petFriendly && (
+          {planta.pet_friendly && (
             <span
               className="inline-flex items-center gap-1 text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full font-medium whitespace-nowrap"
               title="Segura para mascotas"

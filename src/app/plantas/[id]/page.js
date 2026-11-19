@@ -1,4 +1,4 @@
-import {plantas} from "@/data/plantas";
+import { supabase } from "@/lib/supabase";
 import {Heart} from "lucide-react";
 import Link from "next/link";
 
@@ -6,7 +6,7 @@ export const instant = false;
 
 const niveles = {
   baja: "33%", bajo: "33%", facil: "33%", fácil: "33%",
-  media: "66%", medio: "66%",
+  media: "66%", medio: "66%", intermedio: "66%",
   alta: "100%", alto: "100%", avanzado: "100%",
   dificil: "100%", difícil: "100%"
 };
@@ -36,9 +36,13 @@ const BarraEstadistica = ({ titulo, nivel }) => {
 
 export default async function DetallePlanta ({params}) {
     const {id} = await params;
-    const plantaEncontrada = plantas.find((p) => p.id === parseInt(id));
+    const { data: plantaEncontrada, error } = await supabase
+        .from("plantas")
+        .select("*")
+        .eq("id", id)
+        .single();
 
-    if(!plantaEncontrada){
+    if (error || !plantaEncontrada) {
         return <div>Planta no encontrada</div>;
     }
 
@@ -70,8 +74,8 @@ export default async function DetallePlanta ({params}) {
                     <span className="text-2xl text-green-900 font-bold">Detalles</span>
                     <div className="border-2 border-green-900 p-2 text-green-900 mb-2 mt-2">
                         <p className="font-bold">Nombre : {plantaEncontrada.nombre}</p>
-                        <p>Pet friendly : {plantaEncontrada.petFriendly ? "Sí" : "No"}</p>
-                        <p>Detalles: {plantaEncontrada.luzDetalle}</p>
+                        <p>Pet friendly : {plantaEncontrada.pet_friendly ? "Sí" : "No"}</p>
+                        <p>Detalles: {plantaEncontrada.luz_detalle}</p>
                         <p>recomendaciones: {plantaEncontrada.sustrato}</p>
                     </div>
                 </div>
